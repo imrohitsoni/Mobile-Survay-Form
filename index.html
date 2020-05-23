@@ -1,0 +1,181 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="description text-center">
+      Let Us Know About You :) 
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name*</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email*</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="120"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your occupation?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select Occupation</option>
+        <option value="student">Student</option>
+        <option value="Service">Serviceman</option>
+        <option value="Bussiness">Bussinessman</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>What is your gender?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="male"
+          type="radio"
+          class="input-radio"
+          checked
+        />Male</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Female"
+          type="radio"
+          class="input-radio"
+        />Female</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="other"
+          type="radio"
+          class="input-radio"
+        />Other</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+       Which mobile brand you preferre?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Apple">Apple</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Oneplus">Oneplus</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What thing you consider before buying mobile phone?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Camera"
+          type="checkbox"
+          class="input-checkbox"
+        />Camera</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Processor"
+          type="checkbox"
+          class="input-checkbox"
+        />Processor</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="RAM"
+          type="checkbox"
+          class="input-checkbox"
+        />RAM</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="screen-size"
+          type="checkbox"
+          class="input-checkbox"
+        />Screen Size</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Operating-system"
+          type="checkbox"
+          class="input-checkbox"
+        />Operating System</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Brand"
+          type="checkbox"
+          class="input-checkbox"
+        />Brand</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Battery"
+          type="checkbox"
+          class="input-checkbox"
+        />Battery</label
+      >
+     
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
